@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nona Tobin — Campaign Materials</title>
-    <meta name="description" content="Campaign materials for Nona Tobin — SCA Board 2026. Flyer, ballot statement, and candidate video.">
+    <title>Nona Tobin — 2026 Campaign Materials</title>
+    <meta name="description" content="Download Nona Tobin's 2026 campaign packet (flyer + ballot statement) and watch her candidate video.">
     <link rel="icon" href="../assets/nona-logo.jpg" type="image/jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,26 +79,35 @@
             line-height: 1.5;
         }
 
-        .btn {
-            display: inline-block;
+        .btn-large {
+            display: block;
+            text-align: center;
             background: rgba(139, 92, 246, 0.5);
             border: 1px solid rgba(139, 92, 246, 0.6);
             color: #fff;
             text-decoration: none;
-            padding: 0.6rem 1.4rem;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            font-weight: 500;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            font-weight: 600;
             transition: background 0.2s, transform 0.15s;
         }
 
-        .btn:hover {
+        .btn-large:hover {
             background: rgba(139, 92, 246, 0.7);
-            transform: translateY(-1px);
+            transform: translateY(-2px);
         }
 
-        .btn:active {
+        .btn-large:active {
             transform: translateY(0);
+        }
+
+        .btn-sub {
+            display: block;
+            text-align: center;
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.45);
+            margin-top: 0.5rem;
         }
 
         .video-wrapper {
@@ -117,15 +126,6 @@
             height: 100%;
             border: 0;
             border-radius: 8px;
-        }
-
-        .pdf-preview {
-            width: 100%;
-            height: 400px;
-            border: 0;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            background: rgba(0, 0, 0, 0.2);
         }
 
         footer {
@@ -152,8 +152,8 @@
 
         @media (max-width: 480px) {
             h1 { font-size: 1.5rem; }
-            .pdf-preview { height: 300px; }
             .section { padding: 1.2rem; }
+            .btn-large { font-size: 0.95rem; padding: 0.85rem 1.2rem; }
         }
     </style>
 </head>
@@ -162,24 +162,16 @@
         <a href="../" class="back-link">&larr; Back to nonatobin.com</a>
 
         <header>
-            <h1>NONA TOBIN</h1>
+            <h1>NONA TOBIN &mdash; 2026 Campaign Materials</h1>
             <p class="slogan">OWNERS SHOULD ALWAYS COME FIRST</p>
         </header>
 
-        <!-- Campaign Flyer -->
+        <!-- Merged PDF Download -->
         <div class="section">
-            <div class="section-title">📄 Campaign Flyer</div>
-            <p class="section-desc">Overview of my platform, priorities, and qualifications for the SCA Board.</p>
-            <iframe class="pdf-preview" src="Nona_HOA_Board_Flyer.pdf" title="Campaign Flyer"></iframe>
-            <a href="Nona_HOA_Board_Flyer.pdf" class="btn" download>Download Flyer</a>
-        </div>
-
-        <!-- Ballot Statement -->
-        <div class="section">
-            <div class="section-title">📄 Ballot Statement</div>
-            <p class="section-desc">My official ballot statement for the 2026 SCA Board election.</p>
-            <iframe class="pdf-preview" src="Nona%20Tobin%20ballot%20statement%20FINAL.pdf" title="Ballot Statement"></iframe>
-            <a href="Nona%20Tobin%20ballot%20statement%20FINAL.pdf" class="btn" download>Download Statement</a>
+            <div class="section-title">📄 Campaign Flyer &amp; Ballot Statement</div>
+            <p class="section-desc">Everything you need in one document — my campaign flyer (page 1) and official ballot statement (page 2) for the SCA Board 2026 election.</p>
+            <a href="Nona_Tobin_2026_Campaign_Packet.pdf" class="btn-large" download>Download 2026 Campaign Packet (PDF)</a>
+            <span class="btn-sub">2 pages &middot; Flyer + Ballot Statement</span>
         </div>
 
         <!-- Candidate Video -->
@@ -187,7 +179,7 @@
             <div class="section-title">🎬 2-Minute Candidate Video</div>
             <p class="section-desc">Hear directly from me about why I'm running and what I'll fight for.</p>
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/RdMefItMn_0" title="Nona Tobin — Candidate Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/RdMefItMn_0" title="Nona Tobin — 2-Minute Candidate Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
